@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="411dp"
+        android:layout_height="604dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/question1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:text="Wybierz rodzaj ciasta: "
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <RadioGroup
+                android:id="@+id/dough"
+                android:layout_width="374dp"
+                android:layout_height="73dp"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="58dp">
+
+                <RadioButton
+                    android:id="@+id/rThin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Cienkie"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/rThick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Grube"
+                    android:textSize="24sp" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/question2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:text="Wybierz rozmiar:"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="144dp" />
+
+            <RadioGroup
+                android:id="@+id/size"
+                android:layout_width="375dp"
+                android:layout_height="61dp"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="176dp">
+
+                <RadioButton
+                    android:id="@+id/rSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Małe"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/rMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Średni"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/rBig"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Duży"
+                    android:textSize="24sp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/question3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:text="Wybór składników (min. 3):"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="245dp" />
+
+            <CheckBox
+                android:id="@+id/cHam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Szynka"
+                android:textSize="24sp" />
+
+            <CheckBox
+                android:id="@+id/cCheese"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ser"
+                android:textSize="24sp" />
+
+            <CheckBox
+                android:id="@+id/cMuschrom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pieczarki"
+                android:textSize="24sp" />
+
+            <CheckBox
+                android:id="@+id/cOlives"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Oliwki"
+                android:textSize="24sp" />
+
+            <CheckBox
+                android:id="@+id/cBacon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Boczek"
+                android:textSize="24sp" />
+
+            <CheckBox
+                android:id="@+id/cOnion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cebula"
+                android:textSize="24sp" />
+
+            <CheckBox
+                android:id="@+id/cChicken"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kurczak"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/question4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:text="Wybór składników opcjonalnych (max. 2):"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="245dp" />
+
+            <CheckBox
+                android:id="@+id/cGarlic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Czosnek"
+                android:textSize="24sp" />
+
+            <CheckBox
+                android:id="@+id/cSalami"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Salami"
+                android:textSize="24sp" />
+
+            <CheckBox
+                android:id="@+id/cShrimp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Krewetki"
+                android:textSize="24sp" />
+
+            <CheckBox
+                android:id="@+id/cCapers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kapary"
+                android:textSize="24sp" />
+
+            <CheckBox
+                android:id="@+id/cTuna"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tuńczyk"
+                android:textSize="24sp" />
+
+            <CheckBox
+                android:id="@+id/cSosTom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sos pomidorowy"
+                android:textSize="24sp" />
+
+            <CheckBox
+                android:id="@+id/cSosGarl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sos czosnkowy"
+                android:textSize="24sp" />
+
+            <CheckBox
+                android:id="@+id/cOregano"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Oregano"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Podsumowanie"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
